@@ -710,3 +710,18 @@
 @media screen and (max-width: 640px) {
   .cover__box { padding-bottom: 62px; }
 }
+
+/* Обложки лент на телефоне: рулон целиком над синей плашкой.
+   Фото квадратное на светлом фоне — вписываем по ширине и поднимаем вверх,
+   пустоту заливаем цветом краёв фото (inline background-position перебиваем). */
+@media screen and (max-width: 640px) {
+  .cover--product {
+    /* размер фото: по ширине, но на низких экранах меньше, чтобы рулон
+       (≈10–64 % высоты кадра) уместился между шапкой и плашкой (~390px) */
+    --cover-s: min(118vw, calc((100vh - 446px) / 0.64));
+    --cover-s: min(118vw, calc((100svh - 446px) / 0.64));
+    background-color: #f8f9fb;
+    background-size: var(--cover-s) auto !important;
+    background-position: 46% calc(56px - var(--cover-s) * 0.08) !important;
+  }
+}
