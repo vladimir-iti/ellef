@@ -42,6 +42,7 @@
 
 .cover__uptitle {
   margin-bottom: 20px;
+  font-family: var(--font-text);
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2.5px;
@@ -50,12 +51,14 @@
 
 .cover__title {
   margin-bottom: 22px;
+  font-family: var(--font-head);
   font-size: 26px;
   line-height: 32.3px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .cover__descr {
+  font-family: var(--font-text);
   font-size: 18px;
   line-height: 29px;
   font-weight: 300;
@@ -130,9 +133,10 @@
 
 .intro__title {
   margin-bottom: 40px;
+  font-family: var(--font-head);
   font-size: 76px;
   line-height: 1.23;
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
 }
 
@@ -148,6 +152,7 @@
 
 .intro__descr {
   margin-top: 40px;
+  font-family: var(--font-text);
   font-size: 18px;
   line-height: 1.55;
   font-weight: 300;
@@ -195,9 +200,10 @@
 
 .timeline__title {
   margin-bottom: 105px;
+  font-family: var(--font-head);
   font-size: 76px;
   line-height: 1.23;
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
   text-align: right;
   overflow-wrap: break-word;
@@ -234,14 +240,16 @@
 
 .timeline__name {
   margin: 2px 0 6px;
+  font-family: var(--font-head);
   font-size: 28px;
   line-height: 1.35;
-  font-weight: 600;
+  font-weight: 700;
   color: #012959;
 }
 
 .timeline__text {
   margin: 10px 0 5px;
+  font-family: var(--font-text);
   font-size: 15px;
   line-height: 1.55;
   font-weight: 300;
@@ -335,9 +343,10 @@
 
 .features__title {
   margin-bottom: 40px;
+  font-family: var(--font-head);
   font-size: 76px;
   line-height: 1.23;
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
   text-transform: uppercase;
   overflow-wrap: break-word;
@@ -346,6 +355,7 @@
 .features__subtitle {
   max-width: 560px;
   margin: 0 0 105px auto;
+  font-family: var(--font-head);
   font-size: 28px;
   line-height: 1.5;
   font-weight: 300;
@@ -384,15 +394,16 @@
 }
 
 .features__name {
-  font-family: 'TildaSans', Arial, sans-serif;
+  font-family: var(--font-head);
   font-size: 28px;
   line-height: 1.35;
-  font-weight: 600;
+  font-weight: 700;
   color: #012959;
 }
 
 .features__text {
   margin-top: 12px;
+  font-family: var(--font-text);
   font-size: 15px;
   line-height: 1.55;
   font-weight: 300;
@@ -450,15 +461,17 @@
 }
 
 .heading__title {
+  font-family: var(--font-head);
   font-size: 76px;
   line-height: 1.17;
-  font-weight: 600;
+  font-weight: 700;
   color: #012959;
   text-transform: uppercase;
 }
 
 .heading__descr {
   padding: 50px 0 9px;
+  font-family: var(--font-head);
   font-size: 28px;
   line-height: 1.45;
   font-weight: 300;
@@ -506,7 +519,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 120px;
-  font-family: 'TildaSans', Arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 18px;
   line-height: 1.55;
   font-weight: 300;
@@ -620,9 +633,10 @@
 
 .usage__title {
   margin-bottom: 16px;
+  font-family: var(--font-head);
   font-size: 76px;
   line-height: 1.23;
-  font-weight: 700;
+  font-weight: 800;
   color: #012959;
   text-transform: uppercase;
 }
@@ -630,6 +644,7 @@
 .usage__lead {
   max-width: 400px;
   margin: 0 0 28px auto;
+  font-family: var(--font-text);
   font-size: 18px;
   line-height: 1.55;
   font-weight: 300;
@@ -647,6 +662,7 @@
 
 .usage__descr {
   margin-top: 28px;
+  font-family: var(--font-text);
   font-size: 15px;
   line-height: 1.55;
   font-weight: 300;
@@ -729,4 +745,18 @@
       calc(50vw - var(--cover-s) * 0.58)
       calc((100svh - 320px) / 2 - var(--cover-s) * 0.42) !important;
   }
+}
+
+/* Manrope шире Arial: на самых узких телефонах длинные заголовки чуть меньше */
+@media (max-width: 359px) {
+  .h-xl { font-size: min(var(--fs-xl), 10.6vw); }
+  .heading__title { font-size: min(30px, 9.1vw); }
+}
+
+/* Таблица размеров на планшете и телефоне — по ширине экрана, без прокрутки */
+@media screen and (max-width: 960px) {
+  .sizes__table { min-width: 0; }
+}
+@media screen and (max-width: 640px) {
+  .sizes__table th, .sizes__table td { padding: 14px 10px; }
 }

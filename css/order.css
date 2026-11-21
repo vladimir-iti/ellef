@@ -18,7 +18,7 @@
   border-radius: 25px;
   background: #fff;
   color: var(--navy);
-  font-family: 'TildaSans', Arial, sans-serif;
+  font-family: var(--font-text);
   box-shadow: 0 20px 60px rgba(0, 11, 48, 0.35);
 }
 
@@ -87,14 +87,16 @@
 
 .order__title {
   padding-right: 40px;
+  font-family: var(--font-head);
   font-size: 34px;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -1px;
 }
 
 .order__lead {
   margin-top: 10px;
+  font-family: var(--font-text);
   font-size: 16px;
   line-height: 1.45;
   color: #4d5b70;
@@ -128,6 +130,7 @@
   justify-content: space-between;
   width: 100%;
   float: left;
+  font-family: var(--font-text);
   font-size: 18px;
   font-weight: 600;
 }
@@ -135,6 +138,7 @@
 .order__legend + * { clear: both; }
 
 .order__remove {
+  font-family: var(--font-text);
   font-size: 14px;
   font-weight: 500;
   color: #8a94a3;
@@ -150,6 +154,7 @@
 }
 
 .order__label {
+  font-family: var(--font-text);
   font-size: 14px;
   font-weight: 500;
   color: #4d5b70;
@@ -193,6 +198,7 @@
 }
 
 .order__type-name {
+  font-family: var(--font-text);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.2;
@@ -200,6 +206,7 @@
 
 .order__type-name small {
   display: block;
+  font-family: var(--font-text);
   font-size: 13px;
   font-weight: 400;
   color: #8a94a3;
@@ -234,6 +241,7 @@
   padding: 0 16px;
   border-radius: 20px;
   background: #fff;
+  font-family: var(--font-text);
   font-size: 15px;
   font-weight: 500;
   white-space: nowrap;
@@ -258,6 +266,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  font-family: var(--font-head);
   font-size: 22px;
   line-height: 1;
   color: var(--navy);
@@ -271,7 +280,7 @@
   height: 44px;
   border: 0;
   background: none;
-  font: 600 17px/1 'TildaSans', Arial, sans-serif;
+  font: 600 17px/1 var(--font-text);
   color: var(--navy);
   text-align: center;
   -moz-appearance: textfield;
@@ -287,6 +296,7 @@
   align-items: center;
   gap: 8px;
   margin-top: 14px;
+  font-family: var(--font-text);
   font-size: 15px;
   font-weight: 600;
   color: var(--orange);
@@ -299,6 +309,7 @@
   height: 26px;
   border: 1.5px solid currentColor;
   border-radius: 50%;
+  font-family: var(--font-text);
   font-size: 18px;
   line-height: 1;
 }
@@ -327,7 +338,7 @@
   border: 1.5px solid #d6dce5;
   border-radius: 14px;
   background: #fff;
-  font: 400 16px/1.4 'TildaSans', Arial, sans-serif;
+  font: 400 16px/1.4 var(--font-text);
   color: var(--navy);
   transition: border-color 0.2s ease;
 }
@@ -357,6 +368,7 @@
   display: flex;
   gap: 12px;
   margin-top: 22px;
+  font-family: var(--font-text);
   font-size: 14px;
   line-height: 1.4;
   color: #4d5b70;
@@ -401,6 +413,7 @@
   padding: 12px 16px;
   border-radius: 12px;
   background: #fff1ea;
+  font-family: var(--font-text);
   font-size: 14px;
   line-height: 1.4;
   color: #b33000;
@@ -412,6 +425,7 @@
   margin-top: 22px;
   border-radius: 30px;
   background: var(--orange);
+  font-family: var(--font-text);
   font-size: 16px;
   font-weight: 600;
   color: #fff;

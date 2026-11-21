@@ -11,7 +11,7 @@
   left: 0;
   z-index: 990;
   width: 100%;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-text);
 }
 
 .header__bar {
@@ -86,7 +86,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
@@ -184,7 +184,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 14px;
   font-weight: 600;
   line-height: 1.35;
@@ -218,7 +218,7 @@
   align-items: center;
   justify-content: center;
   padding: 10.2px 30px;
-  font-family: Arial, sans-serif; /* как у пунктов меню */
+  font-family: var(--font-text); /* как у пунктов меню */
   font-size: 16px;
   font-weight: 700;
   line-height: 1.4;
@@ -468,9 +468,9 @@
 .faq__title {
   display: inline-block;
   max-width: 650px;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-head);
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.1;
   color: #1e1e1e;
 }
@@ -546,7 +546,7 @@
 .faq__text {
   max-width: 700px;
   margin-bottom: 20px;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 15px;
   font-weight: 300;
   line-height: 1.5;
@@ -730,7 +730,7 @@
   top: 50%;
   right: 80px;
   padding: 9px 13px;
-  font-family: 'TildaSans', Arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 15px;
   font-weight: 600;
   line-height: 1.35;
